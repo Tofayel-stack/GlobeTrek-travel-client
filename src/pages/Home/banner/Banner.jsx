@@ -21,11 +21,11 @@ const Banner = () => {
                     <form className="w-full bg-white text-red-900 p-4 rounded-lg shadow-md">
                         <div className="flex lg:flex-nowrap flex-wrap mb-4">
                             <div className="w-1/2 px-3 mb-6 md:mb-0">
-                                <label for="destination" className="block text-gray-700 text-sm font-bold mb-2">Destination</label>
+                                <label htmlFor="destination" className="block text-gray-700 text-sm font-bold mb-2">Destination</label>
                                 <input id="destination" type="text" placeholder="Enter your destination" className="w-full p-3 rounded border border-gray-300"/>
                             </div>
                             <div className="w-1/2  px-3">
-                                <label for="date" className="block text-gray-700 text-sm font-bold mb-2">Date</label>
+                                <label htmlFor="date" className="block text-gray-700 text-sm font-bold mb-2">Date</label>
                                 <input id="date" type="date" className="w-full p-3 rounded border border-gray-300"/>
                             </div>
                             <div className="w-1/2 px-3">

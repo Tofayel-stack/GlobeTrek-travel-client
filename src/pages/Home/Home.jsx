@@ -1,4 +1,6 @@
+import Destination from "./Destination/Destination";
 import Banner from "./banner/Banner";
+import OurService from "./banner/ourService/OurService";
 
 const Home = () => {
 
@@ -7,6 +9,8 @@ const Home = () => {
         <div className="overflow-hidden">
 
           <Banner></Banner>
+          <OurService></OurService>
+          <Destination></Destination>
         </div>
     );
 };
