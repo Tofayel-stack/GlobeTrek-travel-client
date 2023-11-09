@@ -4,6 +4,8 @@ import { AuthContext } from '../context/AuthContextElements';
 import { BsFillMenuButtonWideFill } from 'react-icons/bs';
 import { MdOutlineClose } from 'react-icons/md';
 import { RiMenuUnfoldFill } from 'react-icons/ri';
+import { FaUserCircle } from 'react-icons/fa';
+import UserProfile from '../components/Profile/UserProfile';
 
 
 
@@ -19,10 +21,7 @@ const Navbar = () => {
       localStorage.removeItem("products");
     }
 
-    // custom hook
-
-
-
+  
     
     return (
   
@@ -30,11 +29,7 @@ const Navbar = () => {
       <div className="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           
-          {/* side nav button  */}
-      
-         <label title='dashboard nav' htmlFor="dashSideNav" className="text-white drawer-button lg:hidden"><RiMenuUnfoldFill></RiMenuUnfoldFill></label>
-
-
+    
         <Link
           className="inline-flex items-center"
           to='/'
@@ -72,26 +67,80 @@ const Navbar = () => {
             </li>
             
           </ul>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              {
-                user? 
+          <ul className="items-center hidden space-x-8 lg:flex">
+           
 
-                <button onClick={handleSignOut} className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white
-                transition hover:-rotate-2 hover:scale-110 outline  bg-red-800">signOut</button>
-                :
 
-                <Link
-                to='/signIn'
-                className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white
-                transition hover:-rotate-2 hover:scale-110 outline bg-red-800"
-                
-              >
-                Sign up
-              </Link>
+                    {/* profile pic */}
+                  <div className="dropdown dropdown-end">
+                  <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 
-              }
-            </li>
+                    {/* profile logo */}
+                    <div className="w-10 rounded-full">
+                      {user ? 
+                        <img src={user?.photoURL} alt='user'/>
+                      : 
+                        <span className="text-4xl text-center">
+                          <FaUserCircle />
+                        </span>
+                      }
+                    </div>
+                  </label>
+
+                  
+                  <ul
+                    tabIndex={0}
+                    className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                  >
+                    
+
+                    {user ?
+                    
+                      <>
+                          <li>
+                                <button onClick={handleSignOut}>Sign Out</button>
+                          </li>
+                          <li>
+                                {/* profile modal button */}
+                                <label htmlFor="my-modal-3" className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition hover:-rotate-2 hover:scale-110 outline  bg-red-800">
+                                User Profile
+                                </label>
+
+                          </li>
+                      </>
+
+                      :
+
+                      <>
+
+                        <li>
+                          <Link
+                              to='/signIn'
+                              className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white
+                              transition hover:-rotate-2 hover:scale-110 outline bg-red-800"
+                              
+                            >
+                              Sign up
+                            </Link>
+                        </li>
+                      
+                      </>
+                    }
+                  </ul>
+
+
+      {/* those are modal code  */}
+
+                      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+                      <div className="modal">
+                      <div className="modal-box relative">
+                          <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                          <UserProfile></UserProfile>
+                      </div>
+                      </div>
+
+      {/* modal end */}
+                </div>
           </ul>
 
 
@@ -122,14 +171,13 @@ const Navbar = () => {
                           className="inline-flex items-center"
                           to='/'
                         >
-                          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          GlobeTrek
+                          <span className="font-bold tracking-wide text-gray-800">
+                          Home
                           </span>
                         </Link>
-                    </div>
+                    </div> 
                     <div>
                       <button
-                       
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(false)}
                       >

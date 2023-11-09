@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PlaceCard = () => {
     return (
-        <div className="flex flex-col shadow-xl">
+        <div className="flex flex-col shadow-xl w-80 m-auto">
         <img
             alt=""
             className="object-cover w-full h-60"

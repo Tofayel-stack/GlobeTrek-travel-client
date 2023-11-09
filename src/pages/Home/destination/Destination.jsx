@@ -14,13 +14,20 @@ const Destination = () => {
 
             {/* card  */}
 
-            <div className='grid w-full grid-cols-1 gap-x-6 gap-y-12 lg:grid-cols-4 mt-8'>
+            <div className='grid w-full grid-cols-1 gap-x-2 gap-y-20 lg:grid-cols-4 mt-8'>
 
 
                 <PlaceCard></PlaceCard>
                 <PlaceCard></PlaceCard>
                 <PlaceCard></PlaceCard>
                 <PlaceCard></PlaceCard>
+
+
+                <PlaceCard></PlaceCard>
+                <PlaceCard></PlaceCard>
+                <PlaceCard></PlaceCard>
+                <PlaceCard></PlaceCard>
+
             </div>
 
 
