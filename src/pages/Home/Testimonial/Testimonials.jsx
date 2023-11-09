@@ -66,11 +66,11 @@ const reviewData = [
 const Testimonials = () => {
    
     return (
-     <div  className="bg-zinc-800 py-36">
+     <div  className="bg-red-50 py-36">
         <div className="container mx-auto">
             <div>
-                <span className='text-base text-white font-semibold'>Our Testimonials</span>
-                <h1 className='my-8  text-white text-5xl'>What Our Client Says</h1>
+                <span className='text-bas font-semibold'>Our Testimonials</span>
+                <h1 className='my-8 text-4xl'>What Our Client Says</h1>
             </div>
            
                 <>

@@ -102,9 +102,9 @@ const registerAndSaveUser = (userName,email,password,userType,uploadedPhotoURL) 
 
 
     return (
-       <div className=' bg-amber-900 py-6'>
+       <div className="bg-[url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg')] bg-no-repeat bg-cover h-screen pattern">
          <div className='container px-6 py-6 mx-auto'>
-            <div className="w-full m-auto max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100">
+            <div className="w-full m-auto max-w-md p-8 space-y-3 rounded-xl bg-gray-700 text-gray-100">
                 <h1 className="text-2xl font-bold text-center">SignUp First</h1>
                 <form onSubmit={handleSubmit(handleSignUp)}  className="space-y-6">
                     <div className="space-y-1 text-sm">
@@ -122,15 +122,7 @@ const registerAndSaveUser = (userName,email,password,userType,uploadedPhotoURL) 
                         <input type="file" {...register('userPhoto',{required:'required'})} className="file-input file-input-ghost w-full px-4 rounded-md  bg-gray-600 text-gray-400 border-violet-400" />
                         {errors?.userPhoto && <p className="text-red-600">{errors.userPhoto?.message}</p>}
                     </div>
-                    <div className="space-y-1 text-sm">
-                        <label className="block text-gray-400">Select User Type</label>
-                        <select {...register('userType',{required:"you must put the type info"})} className="select select-bordered text-gray-400 bg-gray-600 w-full ">
-                            
-                            <option>Seller</option>
-                            <option>Buyer</option>
-                        </select>
-                        {errors?.userType && <p className="text-red-600">{errors.userType?.message}</p>}
-                    </div>
+                   
 
                     <div className="space-y-1 text-sm">
                         <label className="block text-gray-400">Password</label>
@@ -149,7 +141,7 @@ const registerAndSaveUser = (userName,email,password,userType,uploadedPhotoURL) 
 
                        
                     </div>
-                    <button className="block w-full p-3 text-center rounded-sm text-gray-600 bg-amber-400">
+                    <button className="block w-full p-3 text-center rounded-sm text-white bg-red-800">
                         {
                         loading? <SmallSpinner></SmallSpinner> : 'SignUp'
                         }

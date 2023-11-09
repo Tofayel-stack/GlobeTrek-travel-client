@@ -2,7 +2,7 @@ import React from 'react';
 import smPic1 from '../../assets/galleryPic/smPic1.png'
 import smPic2 from '../../assets/galleryPic/smPic2.png'
 import smPic3 from '../../assets/galleryPic/smPic3.png'
-import more from '../../assets/galleryPic/more.png'
+import smPic4 from '../../assets/galleryPic/smPic4.png'
 
 
 import demoPic from '../../assets/galleryPic/big.png'
@@ -17,7 +17,7 @@ const ImageGallery = () => {
                 <img className='w-72 h-44 mr-4' src={smPic1} alt="galleryPhoto" />
                 <img className='w-72 h-44 mr-4' src={smPic2} alt="galleryPhoto" />
                 <img className='w-72 h-44 mr-4' src={smPic3} alt="galleryPhoto" />
-                <img className='w-72 h-44 mr-4' src={more} alt="galleryPhoto" />
+                <img className='w-72 h-44 mr-4' src={smPic4} alt="galleryPhoto" />
 
             </div>
         </div>
