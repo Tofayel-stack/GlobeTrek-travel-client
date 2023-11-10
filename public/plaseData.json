@@ -1,0 +1,141 @@
+ [
+      {
+        "place": {
+          "name": "Paris",
+          "hotel_numbers": 1200,
+          "about_info": "Paris, the 'City of Love,' is renowned for its iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. Immerse yourself in the city's romantic ambiance, stroll along the Seine River, and indulge in exquisite French cuisine. Paris is a cultural hub with world-class art, fashion, and a rich history that captivates millions of visitors each year.Paris, the 'City of Love,' is renowned for its iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. Immerse yourself in the city's romantic ambiance, stroll along the Seine River, and indulge in exquisite French cuisine. Paris is a cultural hub with world-class art, fashion, and a rich history that captivates millions of visitors each year.",
+          "basic_info": {
+            "country": "France",
+            "language": "French",
+            "currency": "Euro (EUR)",
+            "area": 105.4,
+            "population": "120M",
+            "time_zone": "UTC+1",
+            "best_time_to_travel": "Spring"
+          },
+          "image_link": "https://images.pexels.com/photos/3848886/pexels-photo-3848886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Tokyo",
+          "hotel_numbers": 900,
+          "about_info": "Tokyo, the capital of Japan, is a vibrant metropolis that seamlessly blends tradition and modernity. Explore the bustling streets of Shibuya, experience the serenity of Meiji Shrine, and indulge in the diverse culinary scene. With cutting-edge technology, historic temples, and quirky districts, Tokyo offers a unique and unforgettable experience.Tokyo, the capital of Japan, is a vibrant metropolis that seamlessly blends tradition and modernity. Explore the bustling streets of Shibuya, experience the serenity of Meiji Shrine, and indulge in the diverse culinary scene. With cutting-edge technology, historic temples, and quirky districts, Tokyo offers a unique and unforgettable experience.",
+          "basic_info": {
+            "country": "Japan",
+            "language": "Japanese",
+            "currency": "Yen (JPY)",
+            "area": 2194,
+            "population":"74M",
+            "time_zone": "UTC+9",
+            "best_time_to_travel": "Spring and Autumn"
+          },
+          "image_link": "https://images.pexels.com/photos/18947580/pexels-photo-18947580/free-photo-of-photo-of-a-church-with-a-clock-tower-on-a-place.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Rome",
+          "hotel_numbers": 800,
+          "about_info": "Rome, the 'Eternal City,' is a treasure trove of history and architecture. Visit the Colosseum, Roman Forum, and Vatican City to witness the grandeur of ancient Rome. Enjoy delicious Italian cuisine, stroll through charming piazzas, and savor the enchanting atmosphere that permeates the city.Rome, the 'Eternal City,' is a treasure trove of history and architecture. Visit the Colosseum, Roman Forum, and Vatican City to witness the grandeur of ancient Rome. Enjoy delicious Italian cuisine, stroll through charming piazzas, and savor the enchanting atmosphere that permeates the city.",
+          "basic_info": {
+            "country": "Italy",
+            "language": "Italian",
+            "currency": "Euro (EUR)",
+            "area": 1285,
+            "population": "85M",
+            "time_zone": "UTC+1",
+            "best_time_to_travel": "Spring and Autumn"
+          },
+          "image_link": "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Sydney",
+          "hotel_numbers": 600,
+          "about_info": "Sydney, a coastal gem in Australia, is known for its stunning harbor, iconic Opera House, and vibrant cultural scene. Relax on Bondi Beach, explore the Royal Botanic Garden, and discover the unique wildlife. Sydney's cosmopolitan atmosphere and friendly locals make it a must-visit destination.Sydney, a coastal gem in Australia, is known for its stunning harbor, iconic Opera House, and vibrant cultural scene. Relax on Bondi Beach, explore the Royal Botanic Garden, and discover the unique wildlife. Sydney's cosmopolitan atmosphere and friendly locals make it a must-visit destination.",
+          "basic_info": {
+            "country": "Australia",
+            "language": "English",
+            "currency": "Australian Dollar (AUD)",
+            "area": 12368,
+            "population": "52M",
+            "time_zone": "UTC+10",
+            "best_time_to_travel": "Spring and Autumn"
+          },
+          "image_link": "https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Cape Town",
+          "hotel_numbers": 400,
+          "about_info": "Cape Town, nestled at the foot of Table Mountain, is a breathtaking destination with a rich cultural heritage. Explore the historic Robben Island, savor local wines in the Cape Winelands, and witness the stunning landscapes along the Garden Route. Cape Town offers a perfect blend of adventure and relaxation.Cape Town, nestled at the foot of Table Mountain, is a breathtaking destination with a rich cultural heritage. Explore the historic Robben Island, savor local wines in the Cape Winelands, and witness the stunning landscapes along the Garden Route. Cape Town offers a perfect blend of adventure and relaxation.",
+          "basic_info": {
+            "country": "South Africa",
+            "language": "Afrikaans, English",
+            "currency": "South African Rand (ZAR)",
+            "area": 2461,
+            "population": "115M",
+            "time_zone": "UTC+2",
+            "best_time_to_travel": "Spring and Autumn"
+          },
+          "image_link": "https://images.pexels.com/photos/417059/pexels-photo-417059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "New York City",
+          "hotel_numbers": 1500,
+          "about_info": "New York City, the 'Big Apple,' is a global hub of culture, entertainment, and commerce. Explore Times Square, Central Park, and the iconic Statue of Liberty. Immerse yourself in Broadway shows, indulge in diverse cuisine, and experience the fast-paced energy of this metropolis.New York City, the 'Big Apple,' is a global hub of culture, entertainment, and commerce. Explore Times Square, Central Park, and the iconic Statue of Liberty. Immerse yourself in Broadway shows, indulge in diverse cuisine, and experience the fast-paced energy of this metropolis.",
+          "basic_info": {
+            "country": "United States",
+            "language": "English",
+            "currency": "US Dollar (USD)",
+            "area": 468.9,
+            "population": "98M",
+            "time_zone": "UTC-5",
+            "best_time_to_travel": "Spring and Fall"
+          },
+          "image_link": "https://images.pexels.com/photos/158398/niagara-falls-waterfall-horseshoe-158398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Marrakech",
+          "hotel_numbers": 300,
+          "about_info": "Marrakech, the 'Red City' of Morocco, is a sensory delight with its vibrant markets, historic palaces, and colorful gardens. Immerse yourself in the bustling Medina, visit the iconic Jardin Majorelle, and savor traditional Moroccan cuisine. Marrakech offers a unique blend of tradition and modernity Marrakech, the 'Red City' of Morocco, is a sensory delight with its vibrant markets, historic palaces, and colorful gardens. Immerse yourself in the bustling Medina, visit the iconic Jardin Majorelle, and savor traditional Moroccan cuisine. Marrakech offers a unique blend of tradition and modernity.",
+          "basic_info": {
+            "country": "Morocco",
+            "language": "Arabic, French",
+            "currency": "Moroccan Dirham (MAD)",
+            "area": 230,
+            "population": "95M",
+            "time_zone": "UTC+0",
+            "best_time_to_travel": "Spring and Fall"
+          },
+          "image_link": "https://images.pexels.com/photos/1573471/pexels-photo-1573471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      },
+      {
+        "place": {
+          "name": "Bangkok",
+          "hotel_numbers": 1000,
+          "about_info": "Bangkok, the bustling capital of Thailand, is a city that never sleeps. Explore ornate temples, navigate through vibrant markets, and indulge in the city's renowned street food. With a mix of modern skyscrapers and historic sites, Bangkok offers a dynamic and eclectic experience for every traveler.Bangkok, the bustling capital of Thailand, is a city that never sleeps. Explore ornate temples, navigate through vibrant markets, and indulge in the city's renowned street food. With a mix of modern skyscrapers and historic sites, Bangkok offers a dynamic and eclectic experience for every traveler.",
+          "basic_info": {
+            "country": "Thailand",
+            "language": "Thai",
+            "currency": "Thai Baht (THB)",
+            "area": 1568.7,
+            "population":"96M",
+            "time_zone": "UTC+7",
+            "best_time_to_travel": "November to February"
+          },
+          "image_link": "https://images.pexels.com/photos/257499/pexels-photo-257499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      }
+      
+    ]
+
+  

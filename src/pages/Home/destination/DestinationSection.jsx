@@ -1,10 +1,11 @@
-import React from 'react';
-import SectionBanner from '../../components/sectionBanner/SectionBanner';
-import PlaceCard from '../../components/cards/PlaceCard';
+import React, { useEffect } from 'react';
+import PlaceCard from '../../../components/cards/PlaceCard';
 import { useQuery } from 'react-query';
-import BigSpinner from '../../components/BigSpinner';
+import BigSpinner from '../../../components/BigSpinner';
+import toast from 'react-hot-toast';
 
-const Destination = () => {
+const DestinationSection = () => {
+
 
     const { isLoading, error, data } = useQuery({
         queryKey:['destinations'],
@@ -28,13 +29,23 @@ const Destination = () => {
         toast.error(error.message)
     }
 
+
     if(data.success == true){
         return (
-            <div>
-                <SectionBanner sectionName={'Choose your Destination'}></SectionBanner>
-                <div className='w-7/12 m-auto grid lg:grid-cols-3 grid-cols-1 gap-y-24 my-12'>
+            <div className='container mx-auto py-28'>
     
-                   
+                {/* title */}
+    
+                <div className=''>
+                        <h1 className='text-3xl font-bold text-center'>Explore Popular Destination</h1>
+                        <span className='block text-zinc-400 text-center'>Cicero famously orated against his political opponent Lucius Sergius Catilina.</span>
+                </div>
+    
+                {/* card  */}
+    
+                <div className='grid w-full grid-cols-1 gap-x-2 gap-y-20 lg:grid-cols-4 mt-8'>
+    
+    
                     {
                         destinationData.map(data => 
                             <PlaceCard 
@@ -46,10 +57,15 @@ const Destination = () => {
                     }
     
                 </div>
+    
+    
+    
+    
             </div>
         );
     }
+
  
 };
 
-export default Destination;
+export default DestinationSection;

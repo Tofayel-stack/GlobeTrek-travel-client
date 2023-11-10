@@ -1,4 +1,4 @@
-import Destination from "./Destination/Destination";
+import DestinationSection from "./destination/DestinationSection";
 import Banner from "./banner/Banner";
 import OurService from "./ourService/OurService";
 import Features from "./features/Features";
@@ -12,7 +12,7 @@ const Home = () => {
 
           <Banner></Banner>
           <OurService></OurService>
-          <Destination></Destination>
+          <DestinationSection></DestinationSection>
           <Features></Features>
           <Testimonials></Testimonials>
         </div>
