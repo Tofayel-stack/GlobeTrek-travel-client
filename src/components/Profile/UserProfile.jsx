@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './userProfile.css'
 import { AuthContext } from '../../context/AuthContextElements';
 
-const UserProfile = () => {
+const UserProfile = ({userPhoto}) => {
 
     const {user} = useContext(AuthContext)
     // console.log(user);
@@ -19,7 +19,7 @@ const UserProfile = () => {
                            
                         </div>
                         <div className="mt-6 w-fit mx-auto ">
-                            <img className='rounded-full' src={user?.photoURL} alt="userPhoto"/>
+                            <img className='rounded-full' src={userPhoto} alt="userPhoto"/>
                         </div>
 
                         <div className="mt-8 ">

@@ -6,6 +6,7 @@ import { MdOutlineClose } from 'react-icons/md';
 import { RiMenuUnfoldFill } from 'react-icons/ri';
 import { FaUserCircle } from 'react-icons/fa';
 import UserProfile from '../components/Profile/UserProfile';
+import { useQuery } from 'react-query';
 
 
 
@@ -21,7 +22,20 @@ const Navbar = () => {
       localStorage.removeItem("products");
     }
 
-  
+
+
+
+       // get user data form context and database .
+   
+       const { isLoading, error, data } = useQuery({
+           queryKey:[user?.email],
+           queryFn: async() =>{
+               const res = await fetch(`http://localhost:5000/user?email=${user?.email}`)
+               const data = await res.json()
+               return data
+           }
+       })
+
     
     return (
   
@@ -78,7 +92,7 @@ const Navbar = () => {
                     {/* profile logo */}
                     <div className="w-10 rounded-full">
                       {user ? 
-                        <img src={user?.photoURL} alt='user'/>
+                        <img src={data?.data?.uploadedPhotoURL} alt='user'/>
                       : 
                         <span className="text-4xl text-center">
                           <FaUserCircle />
@@ -102,7 +116,7 @@ const Navbar = () => {
                           </li>
                           <li>
                                 {/* profile modal button */}
-                                <label htmlFor="my-modal-3" className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition hover:-rotate-2 hover:scale-110 outline  bg-red-800">
+                                <label htmlFor="profile-modal" className="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition hover:-rotate-2 hover:scale-110 outline  bg-red-800">
                                 User Profile
                                 </label>
 
@@ -131,11 +145,11 @@ const Navbar = () => {
 
       {/* those are modal code  */}
 
-                      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+                      <input type="checkbox" id="profile-modal" className="modal-toggle" />
                       <div className="modal">
                       <div className="modal-box relative">
-                          <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                          <UserProfile></UserProfile>
+                          <label htmlFor="profile-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                          <UserProfile userPhoto={data?.data?.uploadedPhotoURL}></UserProfile>
                       </div>
                       </div>
 
