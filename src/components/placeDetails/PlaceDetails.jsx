@@ -12,7 +12,7 @@ const PlaceDetails = () => {
 
     // console.log( "single details ", data?.data?.place);
 
-    const destinationInfo = data?.data?.place;
+    const destinationInfo = data?.data;
 
 
 

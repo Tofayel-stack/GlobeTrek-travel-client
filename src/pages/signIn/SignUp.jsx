@@ -65,6 +65,23 @@ const registerAndSaveUser = (userName,email,password,userType,uploadedPhotoURL) 
                     // call MongoDB function
                     const userData = {userName,email,userType,uploadedPhotoURL}
                     saveUserData(userData)
+
+
+                        // get a jwt token in the time of user login . when firebase say user is authentic . thn we want a jwt for this user
+
+                        fetch('http://localhost:5000/jwt',{
+                            method:'POST',
+                            headers:{
+                            'content-type':'application/json'
+                            },
+                            body: JSON.stringify(user)
+                        })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            // local storage is the easiest but not the best place for store the token . more safe is https coockies .
+                            localStorage.setItem('token' , data.token)
+                        })
                     
                 }
            

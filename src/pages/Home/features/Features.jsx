@@ -11,21 +11,24 @@ const Features = () => {
 
   return (
 
-    <section className="container m-auto flex flex-col justify-center items-center py-12">
+    <section  className="container m-auto flex flex-col justify-center items-center py-12">
       <div className=" font-semibold">
 
        
 
         {/* <div className="flex justify-center items-center "> */}
         <div className="grid lg:grid-cols-2 mx-auto grid-cols-1 items-center">
-          <div className="w-10/12 m-auto lg:ms-0 lg:mb-0 mb-4">
+          <div data-aos="fade-up"
+               data-aos-duration="500" className="w-10/12 m-auto lg:ms-0 lg:mb-0 mb-4">
             <img className="w-full  rounded" src={couplePic} alt="couple pic" />
           </div>
 
-          <div className="grid grid-cols-1 lg:h-[370px] lg:grid-cols-2 gap-6">
+          <div  data-aos="fade-down" data-aos-duration="500"   data-aos-delay="50" className="grid grid-cols-1 lg:h-[370px] lg:grid-cols-2 gap-6">
             <div className="">
               {/* Authenticity */}
-              <div className="p-4 lg:h-44  hover:text-white bg-blue-100 hover:bg-blue-800 shadow-md transition-all duration-700 ease-in-out transform hover:scale-105">
+              <div 
+               
+              className="p-4 lg:h-44  hover:text-white bg-blue-100 hover:bg-blue-800 shadow-md transition-all duration-700 ease-in-out transform hover:scale-105">
                 <h4 className="text-lg flex font-bold ">
                 Get Superb Deals <MdVerified className="mt-1 ml-2" />
                 </h4>

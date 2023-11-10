@@ -7,7 +7,7 @@ const SectionBanner = ({sectionName}) => {
     return (
         <div className="z-0 bg-cover bg-center imageOverlay" style={{ backgroundImage: `url(${aboutBanner})` }}>
           
-              <h1 className='text-5xl text-white text-center relative z-30 py-24'> {sectionName} </h1>
+              <h1 data-aos="fade-down" className='text-5xl text-white text-center relative z-30 py-24'> {sectionName} </h1>
             
         </div>
     );

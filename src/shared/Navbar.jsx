@@ -19,7 +19,7 @@ const Navbar = () => {
     const handleSignOut =()=>{
       userSignOUt()
       navigate('/')
-      localStorage.removeItem("products");
+      localStorage.removeItem("token");
     }
 
 
