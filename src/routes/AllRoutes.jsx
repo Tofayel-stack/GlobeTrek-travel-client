@@ -6,6 +6,7 @@ import AboutPage from "../pages/about/AboutPage";
 import SignUp from "../pages/signIn/SignUp";
 import Destination from "../pages/destination/Destination";
 import PlaceDetails from "../components/placeDetails/PlaceDetails";
+import SearchPage from "../pages/searchPage/SearchPage";
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path:'/destination',
                 element:<Destination></Destination>
+            },
+            {
+                path:'/searchPage',
+                element:<SearchPage></SearchPage>
             },
             {
                 path:'/destination-details/:id',

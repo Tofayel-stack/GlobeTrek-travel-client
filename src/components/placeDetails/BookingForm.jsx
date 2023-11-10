@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useQuery } from 'react-query';
 import { AuthContext } from '../../context/AuthContextElements';
 import toast from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const BookingForm = ({destinationInfo}) => {
 
@@ -120,12 +121,19 @@ const BookingForm = ({destinationInfo}) => {
                     </div>
 
                     <div className="flex items-center justify-center mb-4">
-                        <button
+                       
+                            <button
                             className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
-                            type="submit">
+                            type="submit"  disabled={!user}>
                             Confirm
                         </button>
+
+                  
                     </div>
+                    
+                    {
+                            !user && <p className='text-red-500 text-center'>please <Link className='font-bold underline' to='/signIn'>Sign In</Link> first </p>
+                        }
 
                 </form>
             </div>

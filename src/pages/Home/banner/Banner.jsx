@@ -1,9 +1,12 @@
 import React from 'react';
 import bannerVideo from "./../../../assets/bannerVideo.mp4"
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
 
 
+    const navigate = useNavigate()
 
     const handleSearch = (event) =>{
             event.preventDefault();
@@ -14,6 +17,18 @@ const Banner = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+
+                if(data.data.length > 0){
+                    navigate('/searchPage',{
+                        state: { searchResult : data }})
+                }else{
+                    event.target.reset()
+                    toast.success("no data found ")
+                }
+               
+
+               
+               
             })
     }
 
@@ -39,7 +54,7 @@ const Banner = () => {
                             {/* <div className="w-1/2 px-3 mb-6 md:mb-0"> need to active later . insted of just bellow line */}
                             <div className="w-full px-3 mb-6 md:mb-0">
                                 <label htmlFor="destination" className="block text-gray-700 text-sm font-bold mb-2">Destination</label>
-                                <input name='destinationName' id="destination" type="text" placeholder="Enter your destination" required className="w-full p-3 rounded border border-gray-300"/>
+                                <input name='destinationName' id="destination" type="text" placeholder="Search destination by name E.g: Rome " required className="w-full p-3 rounded border border-gray-300"/>
                             </div>
 
 
