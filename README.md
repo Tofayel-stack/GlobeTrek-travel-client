@@ -22,6 +22,7 @@ Globe trek is committed to delivering a secure, user-friendly online marketplace
 
 ## Deployment
 #### Live site :  https://epic-deals-ecommerce.web.app/
+#### server repo :  https://github.com/Tofayel-stack/globe-trek-travel-server
 
 
 
